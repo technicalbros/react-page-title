@@ -1,0 +1,19 @@
+{
+  "name": "react-page-title",
+  "main": "./src/index.ts",
+  "version": "1.0.0",
+  "dependencies": {},
+  "peerDependencies": {
+    "@uirouter/react": "^0.8.7",
+    "lodash": "^4.17.11",
+    "react": "^16.7.0"
+  },
+  "scripts": {
+    "watch": "tsc --watch"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.119",
+    "@types/react": "^16.7.18",
+    "typescript": "^3.2.2"
+  }
+}
