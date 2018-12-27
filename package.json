@@ -1,5 +1,5 @@
 {
-  "name": "react-page-title",
+  "name": "@technicalbros/react-page-title",
   "main": "./src/index.ts",
   "version": "1.0.0",
   "dependencies": {},
