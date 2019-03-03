@@ -1,7 +1,7 @@
 {
   "name": "@technicalbros/react-page-title",
   "main": "./src/index.tsx",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "dependencies": {
     "lodash": "^4.x",
     "react": "^16.x"
