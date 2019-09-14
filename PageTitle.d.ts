@@ -1,10 +1,10 @@
 import * as React from "react";
 import Title from "./Title";
-export default class PageTitle extends React.Component {
-    props: {
-        children: string;
-        untitledText?: string;
-    };
+interface PageTitleProps {
+    children: string;
+    untitledText?: string;
+}
+export default class PageTitle extends React.Component<PageTitleProps> {
     context: Title;
     state: any;
     static contextType: React.Context<Title>;
@@ -14,3 +14,4 @@ export default class PageTitle extends React.Component {
     componentWillUnmount(): void;
     render(): React.ReactNode;
 }
+export {};

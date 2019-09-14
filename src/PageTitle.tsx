@@ -2,22 +2,22 @@ import * as React from "react";
 import Title from "./Title";
 import TitleContext from "./TitleContext";
 
-export default class PageTitle extends React.Component {
+interface PageTitleProps {
+    children: string,
+    untitledText?: string
+}
 
-    props: {
-        children: string,
-        untitledText?: string,
-    }
+export default class PageTitle extends React.Component<PageTitleProps> {
 
-    context: Title
+    context: Title;
 
     state: any = {
         get untitledText() {
             return this.props.untitledText
         }
-    }
+    };
 
-    static contextType = TitleContext
+    static contextType = TitleContext;
 
     updateTitle() {
         this.context.set(this.props.children)

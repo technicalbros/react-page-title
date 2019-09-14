@@ -3,12 +3,12 @@ import {UIRouterReact} from "@uirouter/react";
 
 export default class Title {
 
-    appName = "React App";
-    private _onChange: ((title: string) => void)[] = []
-    private _formatTitle: (title: string) => string
+    private appName = "React App";
+    private _onChange: ((title: string) => void)[] = [];
+    private _formatTitle: (title: string) => string;
 
     constructor({appName, onChange, formatter}: { appName?: string, onChange?: (title: string) => void, formatter?: (title: string) => string } = {}) {
-        this.setAppName(appName)
+        this.setAppName(appName);
         this.onChange(onChange);
         this.setFormatter(formatter)
     }
@@ -28,7 +28,7 @@ export default class Title {
     }
 
     onChange(onChange: (title: string) => void = () => null): () => void {
-        this._onChange.push(onChange)
+        this._onChange.push(onChange);
         return () => {
             _.pull(this._onChange, onChange);
         }
@@ -46,7 +46,7 @@ export default class Title {
             const title = _.get(state, "data.title", 'Untitled');
             if (title !== false)
                 this.set(title || '')
-        })
+        });
         return this;
     }
 

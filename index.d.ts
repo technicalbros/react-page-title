@@ -1,3 +1,3 @@
-export import TitleProvider = require("./TitleProvider");
-export import TitleContext = require("./TitleContext");
-export import Title = require("./Title");
+export { default as TitleProvider } from "./TitleProvider";
+export { default as TitleContext } from "./TitleContext";
+export { default as Title } from "./Title";

@@ -1,6 +1,6 @@
 import { UIRouterReact } from "@uirouter/react";
 export default class Title {
-    appName: string;
+    private appName;
     private _onChange;
     private _formatTitle;
     constructor({ appName, onChange, formatter }?: {
