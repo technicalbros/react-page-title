@@ -6,3 +6,5 @@ var TitleContext_1 = require("./TitleContext");
 exports.TitleContext = TitleContext_1.default;
 var Title_1 = require("./Title");
 exports.Title = Title_1.default;
+var PageTitle_1 = require("./PageTitle");
+exports.PageTitle = PageTitle_1.default;
